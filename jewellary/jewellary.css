@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#NameHead{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.price{
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    background-color: bisque;
+    /* margin: 0vw 5vw; */
+    padding: 10px;
+}
+.header{
+  display: flex;
+  flex-direction: 5px;
+  justify-content: space-around;
+      width: 100vw;
+    /* height: 15vh; */
+    background-color: brown;
+    font-size: x-large;
+    align-items: center;
+    color: rgb(239, 219, 137);
+}
+.VNR{
+  text-decoration:solid;
+}
+.navbar{
+    background-color: brown;
+    display:flex;
+    justify-content: space-around;
+    margin: 1% auto;
+    padding: 1%;
+}
+li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+}
+.goldorns{
+    font-size: larger;
+}
+.goldGrid{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    width: 95%;
+    /* height: 50vh; */
+    /* background-color: rgb(245, 236, 198); */
+    border: 2px solid black;
+}
+.row1, .row2, .row3{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    justify-content: space-around;
+    align-items: center;
+}
+.goldimgg{
+    width: 100%;
+    height: 100%;
+}
+.silvercontainer{
+    display: block;
+    /* flex-direction: row; */
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10 10;
+    align-items: center;
+}
+#NameHead{
+  margin: 0;
+}
+.slideshow-container {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .image {
+    display: none;
+    width: 100%;
+  }
+
+  .image.active {
+    display: block;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: background-color 0.3s;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+  }
+
+  /* Caption text */
+  .caption {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 18px;
+  }
+
+  /* Number text (1/4 etc) */
+  .numbertext {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #f2f2f2;
+    font-size: 12px;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+  }
+
+  .dot.active {
+    background-color: #717171;
+  }
+
+  .dots {
+    text-align: center;
+    padding: 10px 0;
+}
+.location{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    justify-content: space-around;
+}
+.ReachUsNote{
+    border: 2px solid grey;
+    padding: 10px;
+    justify-content: space-evenly;
+    align-items: space-around;
+
+}
+/* .contDiv{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 40vh;
+  font-size: x-large;
+  border: 2px solid black;
+  gap: 2%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px;
+
+} */
+/* .cont{
+  width: 45vw;
+}
+.subj{
+  width: 40vw;
+} */
+#Name ,#email,#phn,#subject{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  /* background-color: bisque;? */
+  /* margin: 0vw 5vw; */
+  padding: 10px;
+
+}
+.cont1 , .cont2{
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  align-items: space-around;
+  justify-content: space-around;
+  width: 90vw;
+
+  /* width: 100vw; */
+}
+.Queries{
+  display: flex;
+  flex-direction: column;
+  gap: 15%;
+  /* justify-content: center; */
+  width: 100vw;
+  align-items: center;
+  padding: 5px;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.copyright {
+  font-size: 12px;
+  line-height: 1.2;
+  display: flex;
+}
+
+.copyright p {
+  margin: 3px 10px; /* Add margin between paragraphs */
+}
+
+@media (max-width: 600px) {
+  .copyright p {
+    margin: 3px 0;
+  }
+}

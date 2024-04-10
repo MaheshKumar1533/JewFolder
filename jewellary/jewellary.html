@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harsha Jewellary</title>
+  <link rel="stylesheet" href="jewellary.css">
+</head>
+
+<body>
+  <div class="price">
+    <p>Today's Price : Gold 6000 Rs/gm , Silver 80 Rs/gm</p>
+  </div>
+  <div class="header">
+    <div class="head">
+      <h1 id="NameHead">HARSHA JEWELLERS</h1>
+    </div>
+    <div class="VNR">
+      <ul>
+        <li class="Pname">V NAGA RAJARAO</li>
+        <li class="Pname">V NAGA BHUSHANA</li>
+      </ul>
+    </div>
+  </div>
+  <nav>
+    <ul class="navbar">
+      <li><a href="#">Gold</a></li>
+      <li><a href="#">Silver</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="https://maps.app.goo.gl/JrVTsmmdtzzQqBXg8">Location</a></li>
+    </ul>
+  </nav>
+  <div class="goldorns">
+    <h3>GOLD ORNAMENTS</h3>
+  </div>
+  <div class="goldGrid">
+    <div class="row1">
+      <div class="goldImg1"><img src="Ornaments/bangles1.jpg" alt="" class="goldimgg"></div>
+      <div class="goldImg2"><img src="Ornaments/bracelet1.jpg" alt="" class="goldimgg"></div>
+      <div class="goldImg3"><img src="Ornaments/chains1.jpg" alt="" class="goldimgg"></div>
+    </div>
+    <div class="row2">
+      <div class="goldImg4"><img src="Ornaments/earring1.jpg" alt="" class="goldimgg"></div>
+      <div class="goldImg5"><img src="Ornaments/haaram1.jpg" alt="" class="goldimgg"></div>
+      <div class="goldImg6"><img src="Ornaments/jhumkas1.jpg" alt="" class="goldimgg"></div>
+    </div>
+    <div class="row3">
+      <div class="goldImg7"><img src="Ornaments/necklaces1.jpg" alt="" class="goldimgg"></div>
+      <div class="goldImg8"><img src="Ornaments/pendants.jpg" alt="" class="goldimgg"></div>
+      <div class="goldImg9"><img src="Ornaments/Ring1.jpg" alt="" class="goldimgg"></div>
+    </div>
+  </div>
+
+  <!-- <div class="silverGrid">
+    <img src="Ornaments/silverGanesh.jpg" alt="silverGanesh" class="silverimg">
+    <img src="Ornaments/silverDeepaalu.jpg" alt="silverDeepaalu" class="silverimg">
+    <img src="Ornaments/silverDeepam.jpg" alt="silverDeepam" class="silverimg">
+    <img src="Ornaments/silverKalisham.jpg" alt="silverKalisham" class="silverimg">
+  </div> -->
+  <br><br><br>
+  <div class="silvercontainer">
+    <div class="silverTemp">
+      <h1>Silver Items</h1>
+    </div>
+
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="image active">
+        <a href="#siverItems"><img src="Ornaments/silverGanesh.jpg" alt="Image 1" style="width:100%"></a>
+        <div class="caption">Silver Ganesh</div>
+      </div>
+
+      <div class="image">
+        <a href="#siverItems"><img src="Ornaments/silverDeepam.jpg" alt="Image 2" style="width:100%"></a>
+        <div class="caption">Silver Deepam </div>
+      </div>
+
+      <div class="image">
+        <a href="#siverItems"><img src="Ornaments/silverKalisham.jpg" alt="Image 3" style="width:100%"></a>
+
+        <div class="caption">Silver Kalisham</div>
+      </div>
+
+      <div class="image">
+        <a href="#siverItems"><img src="Ornaments/silverDeepaalu.jpg" alt="Image 4" style="width:100%"></a>
+        <div class="caption">Silver Deepaalu</div>
+      </div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+
+  <!-- The dots/bullets/indicators -->
+  <div class="dots" style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function changeSlide(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("image");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].classList.add("active");
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+  <hr>
+  <div class="location">
+    <div class="ReachUsNote">
+      <div>
+        <h3>
+          Matter of minutes to Reach Us :
+        </h3>
+      </div>
+      <div>
+        <h4>SankarComplex,<br>Main Road,<br>B.Kothakota-517370</h4>
+      </div>
+    </div>
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d484.62543613356775!2d78.2632999!3d13.6575515!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb23fb8a226547b%3A0x5526cd98d8df534c!2z4LC54LCw4LGN4LC3IOCwnOCxjeCwr-CxgeCwteCxhuCwsuCwsOCxjeCwuOCxjQ!5e0!3m2!1sen!2sin!4v1712733054855!5m2!1sen!2sin"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+        <!-- width="400" height="300" style="border: 10px;;" allowfullscreen="" loading="fast"> -->
+      </iframe>
+
+    </div>
+  </div>
+  <hr>
+  <div class="contactDetails">
+    <div class="phonenumbers">
+      <div class="headnum">
+        <h3>
+          Phone Numbers
+        </h3>
+      </div>
+      <div class="numbers">
+        <h5>Naga Raja : 9866342013</h5>
+        <h5>Naga Bhushana : 6301455567</h5>
+      </div>
+      <div class="whatsapp">
+        <a href="https://wa.me/6301455567">
+          <img src="whatsapp.png" alt="whatsapp">
+        </a>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="Queries">
+    <h3>Feel Free for Any Queries</h3>
+    <div class="contDiv">
+      <div class="cont">
+      
+        <form action="">
+          <div class="cont1">
+          <div class="name">
+            <label for="Name">Name</label> <br>
+
+            <input type="text" id="Name" name="Name">
+          </div>
+          <div class="email">
+            <label for="email">Email</label><br>
+            <input type="text" id="email" name="email">
+          </div>
+        </div>
+        <div class="cont2">
+          <div class="PhoneNumber">
+            <label for="phn">Phone Number</label><br>
+            <input type="text" id="phn" name="phn">
+          </div>
+
+          <div class="subject">
+            <label for="subject">Subject</label><br>
+            <input type="text" id="subject" name="subject">
+          </div>
+          </div>
+      </div>
+      <div class="subj">
+        <div class="message">
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" rows="7" cols="60"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="submit-btn">
+      <button type="submit" id="submit-btn">Submit</button>
+    </div>
+    </form>
+  </div>
+  <hr>
+  <footer>
+    <div class="copyright">
+      <p>Copyright &copy; 2024 <NAME></p>
+      <p>All Rights Reserved</p>
+    </div><br>
+    <span>Designed by Mahesh & Harsha</span>
+  </footer>
+  
+</body>
+
+</html>
