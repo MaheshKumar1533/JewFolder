@@ -1,172 +1,213 @@
-*{
-    padding: 0;
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+	padding: 0;
+	margin: 0;
 }
-#NameHead{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+#NameHead {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+		sans-serif;
 }
-.price{
-    width: 100%;
-    height: 5vh;
-    text-align: center;
-    background-color: bisque;
-    /* margin: 0vw 5vw; */
-    padding: 10px;
+.price {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	/* margin: 0vw 5vw; */
 }
-.header{
-  display: flex;
-  flex-direction: 5px;
-  justify-content: space-around;
-      width: 100vw;
-    /* height: 15vh; */
-    background-color: brown;
-    font-size: x-large;
-    align-items: center;
-    color: rgb(239, 219, 137);
+.price span {
+	padding: 10px 30px;
+	background-color: bisque;
 }
-.VNR{
-  text-decoration:solid;
+.header {
+	position: sticky;
+	display: flex;
+	top: 0px;
+	flex-direction: 5px;
+	justify-content: space-around;
+	/* width: 100vw; */
+	/* height: 15vh; */
+	background-color: brown;
+	font-size: x-large;
+	align-items: center;
+	z-index: 100;
+	color: rgb(239, 219, 137);
 }
-.navbar{
-    background-color: brown;
-    display:flex;
-    justify-content: space-around;
-    margin: 1% auto;
-    padding: 1%;
+.VNR {
+	text-decoration: solid;
 }
-li{
-    list-style: none;
+.navbar {
+	background-color: brown;
+	display: flex;
+	justify-content: space-around;
+	margin: 1% auto;
+	padding: 1%;
 }
-li a{
-    text-decoration: none;
-    color: grey;
-    font-size: 20px;
+li {
+	list-style: none;
 }
-.goldorns{
-    font-size: larger;
+li a {
+	text-decoration: none;
+	color: rgb(255, 251, 0);
+	font-size: 20px;
 }
-.goldGrid{
-    display: flex;
-    flex-direction: column;
-    overflow: auto;
-    width: 95%;
-    /* height: 50vh; */
-    /* background-color: rgb(245, 236, 198); */
-    border: 2px solid black;
+.gold-container {
+	width: 95%;
+	margin: auto;
 }
-.row1, .row2, .row3{
-    display: flex;
-    flex-direction: row;
-    gap: 2%;
-    justify-content: space-around;
-    align-items: center;
+.goldorns {
+	font-size: larger;
 }
-.goldimgg{
-    width: 100%;
-    height: 100%;
+.goldGrid {
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+	align-items: center;
+	justify-content: center;
+	align-self: center;
+	/* height: 50vh; */
+	/* background-color: rgb(245, 236, 198); */
+	border: 2px solid black;
 }
-.silvercontainer{
-    display: block;
-    /* flex-direction: row; */
-    justify-content: space-around;
-    padding: 10px;
-    margin: 10 10;
-    align-items: center;
+.row1,
+.row2,
+.row3 {
+	display: flex;
+	flex-direction: row;
+	gap: 2%;
+	justify-content: space-around;
+	align-items: center;
 }
-#NameHead{
-  margin: 0;
+.goldimgg {
+	width: 100%;
+	height: 100%;
+}
+.silvercontainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 10px;
+	margin: 10px 10px;
+	align-items: center;
+}
+#NameHead {
+	margin: 0;
 }
 .slideshow-container {
-    position: relative;
-    max-width: 500px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-
-  .image {
-    display: none;
-    width: 100%;
-  }
-
-  .image.active {
-    display: block;
-  }
-
-  /* Next & previous buttons */
-  .prev, .next {
-    display: none;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    transition: background-color 0.3s;
-  }
-
-  .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-  }
-
-  /* Caption text */
-  .caption {
-    text-align: center;
-    padding: 10px 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 18px;
-  }
-
-  /* Number text (1/4 etc) */
-  .numbertext {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #f2f2f2;
-    font-size: 12px;
-  }
-
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.3s;
-  }
-
-  .dot.active {
-    background-color: #717171;
-  }
-
-  .dots {
-    text-align: center;
-    padding: 10px 0;
+	position: relative;
+	max-width: 500px;
+	margin: 0 auto;
+	overflow: hidden;
 }
-.location{
-    display: flex;
-    flex-direction: row;
-    gap: 2%;
-    justify-content: space-around;
+
+.image {
+	display: none;
+	width: 100%;
 }
-.ReachUsNote{
-    border: 2px solid grey;
-    padding: 10px;
-    justify-content: space-evenly;
-    align-items: space-around;
+
+.image.active {
+	display: block;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	transition: background-color 0.3s;
+}
+
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+}
+
+/* Caption text */
+.caption {
+	text-align: center;
+	padding: 10px 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	font-size: 18px;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #f2f2f2;
+	font-size: 12px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.3s;
+}
+
+.dot.active {
+	background-color: #717171;
+}
+
+.dots {
+	text-align: center;
+	padding: 10px 0;
+}
+.location {
+	display: flex;
+	flex-direction: row;
+	gap: 2%;
+	justify-content: space-around;
+	background-color: rgb(239, 219, 137);
+	padding: 2rem;
+	font-family: Inter;
+}
+.ReachUsNote {
+	border: 2px solid grey;
+	padding: 1rem;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: space-around;
+	background-color: brown;
+	color: rgb(239, 219, 137);
+}
+/* .contact {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+} */
+.map {
+	border: 2px solid brown;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.contDiv {
+	width: 60%;
+	background-color: rgba(186, 224, 72, 0.1);
+	border: 2px solid brown;
 
 }
 /* .contDiv{
@@ -188,56 +229,123 @@ li a{
 .subj{
   width: 40vw;
 } */
-#Name ,#email,#phn,#subject{
-  width: 100%;
-  height: auto;
-  text-align: center;
-  /* background-color: bisque;? */
-  /* margin: 0vw 5vw; */
-  padding: 10px;
 
+.contDiv {
+	width: 75%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem;
+	border-radius: 10px;
 }
-.cont1 , .cont2{
-  display: flex;
-  flex-direction: row;
-  gap: 10%;
-  align-items: space-around;
-  justify-content: space-around;
-  width: 90vw;
+#Name,
+#email,
+#phn,
+#subject,
+#message {
+	width: 90%;
+	color: brown;
+	text-align: center;
+	padding: 10px;
+	background-color: transparent;
+	border: none;
+	border: 1px solid brown;
+	border-radius: 10px;
+	outline: none;
+}
+#Name:focus,
+#email:focus,
+#phn:focus,
+#subject:focus,
+#message:focus {
+	border: 2px solid brown;
+}
+#message {
+	height: 10vh;
+	resize: none;
+}
+.cont {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+.cont1,
+.cont2 {
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+	gap: 10%;
+	width: 100%;
+	height: 100%;
+	align-items: space-around;
+	justify-content: space-around;
+}
+.cont2 {
+	height: 100%;
+}
 
-  /* width: 100vw; */
+.name,
+.email,
+.PhoneNumber,
+.subject,
+.message {
+	width: 100%;
 }
-.Queries{
-  display: flex;
-  flex-direction: column;
-  gap: 15%;
-  /* justify-content: center; */
-  width: 100vw;
-  align-items: center;
-  padding: 5px;
+button[type=submit]{
+	padding: 10px;
+	background-color: transparent;
+	border: none;
+	color: brown;
+	font-size: 1.5rem;
+	border: 2px solid brown;
+	outline: none;
+	border-radius: 10px;
+	transition: all 200ms ease-in-out;
 }
+button[type=submit]:hover{
+	background-color: brown;
+	color: rgb(239, 219, 137);
+	border: 2px solid rgb(239, 219, 137);
+	cursor: pointer;
+}
+.Queries {
+	display: flex;
+	flex-direction: column;
+	gap: 15%;
+	/* justify-content: center; */
+	/* width: 100vw; */
+	align-items: center;
+	background-color: rgb(239, 219, 137);
+	color: brown;
+	font-family: Inter;
+}
+
 footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+	font-family: Inter;
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .copyright {
-  font-size: 12px;
-  line-height: 1.2;
-  display: flex;
+	font-size: 12px;
+	line-height: 1.2;
+	display: flex;
 }
 
 .copyright p {
-  margin: 3px 10px; /* Add margin between paragraphs */
+	margin: 3px 10px; /* Add margin between paragraphs */
 }
 
 @media (max-width: 600px) {
-  .copyright p {
-    margin: 3px 0;
-  }
+	.copyright p {
+		margin: 3px 0;
+	}
 }
